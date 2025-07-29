@@ -9,6 +9,7 @@ import 'swiper/css/pagination';
 import background1 from '/src/assets/bac.png'
 import background from '/src/assets/background.png'
 import aboutUs from '/src/assets/aboutUs.png'
+import logoFooter from '/src/assets/hexa.svg'
 
 function App() {
 
@@ -159,40 +160,55 @@ function App() {
                     </div>
                 </section>
 
-                <section id="contact" className="contact-section">
+                <section id="contact" className="contact-section py-5" style={{ backgroundColor: '#454545ff', color: '#fff' }}>
                     <div className="container">
-                        <div className="row">
-                            <div className="col-lg-8 mb-4 mb-lg-0">
-                                <h2>Contact us</h2>
-                                <p className="contact-subtitle">Send us a message</p>
+                        <div className="row align-items-center">
+                            {/* Left: Contact Form */}
+                            <div className="col-lg-6 mb-4 mb-lg-0">
+                                <h2 className="fw-bold mb-0" style={{ fontSize: '59px' }}>Contact us</h2>
+                                <p className=" mb-4" style={{ fontSize: '29px', fontWeight: 400 }}>Send us a message</p>
+
                                 <form className="contact-form">
-                                    <div className="row">
-                                        <div className="col-md-6">
-                                            <input type="text" className="form-control" placeholder="Full Name" required />
-                                        </div>
-                                        <div className="col-md-6">
-                                            <input type="email" className="form-control" placeholder="Email" required />
-                                        </div>
+                                    <div className="mb-3">
+                                        <input type="text" style={{ width: '70%' }} className="form-control bg-secondary-subtle border-0" placeholder="Full Name" required />
                                     </div>
-                                    <textarea className="form-control" placeholder="Your Message" required></textarea>
-                                    <button type="submit" className="btn-submit">Submit</button>
+                                    <div className="mb-3">
+                                        <input type="email " style={{ width: '70%' }} className="form-control bg-secondary-subtle border-0" placeholder="Email" required />
+                                    </div>
+                                    <div className="mb-3">
+                                        <textarea className="form-control bg-secondary-subtle border-0" placeholder="Your Message" rows={6} required></textarea>
+                                    </div>
+                                    <button type="submit" className="btn btn-dark px-4 py-2">Submit</button>
                                 </form>
                             </div>
-                            <div className="col-lg-4">
-                                <div className="contact-info">
-                                    <div className="contact-logo">
-                                        <span className="text-orange">he</span>Hexa<br />
-                                        <span className="text-orange">xa</span>Digital
-                                    </div>
-                                    <div className="contact-details">
-                                        <p><i className="fas fa-phone"></i> +977 9860811940</p>
-                                        <p><i className="fas fa-envelope"></i> gospelknights5@gmail.com</p>
+
+                            {/* Right: Logo and Contact Info */}
+                            <div className="col-lg-6 d-flex flex-column align-items-center text-center">
+                                <div >
+                                    < img src={logoFooter} className="rounded-circle bg-light d-flex align-items-center justify-content-center mb-4" style={{ width: '200px', height: '200px' }}></img>
+                                </div>
+                                {/*   <div >
+                                            <img src="/hexa.png"></img>
+                                        </div> */}
+                                <div className="text-start">
+                                    <div className='ms-5 mt-2'>
+                                        <p style={{ fontSize: '20px' }} className="ms-4 d-flex ">
+                                            <i className="fas fa-phone-alt me-2 fa-rotate-90" style={{ fontSize: '29px' }}></i>
+
+
+                                            <p>+977 9860811940</p>
+                                        </p>
+                                        <p style={{ fontSize: '20px' }} className="mb-2 d-flex ms-4">
+                                            <i className="fas fa-envelope me-2 " style={{ fontSize: '29px' }}></i><p>gospelknight55@gmail.com</p>
+                                        </p>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
                 </section>
+
 
                 <footer className="footer">
                     <div className="container">
