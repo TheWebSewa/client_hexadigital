@@ -191,7 +191,7 @@ function App() {
                                             <img src="/hexa.png"></img>
                                         </div> */}
                                 <div className="text-start">
-                                    <div className='ms-5 mt-2'>
+                                    {/* <div className='ms-5 mt-2'>
                                         <p style={{ fontSize: '20px' }} className="ms-4 d-flex ">
                                             <i className="fas fa-phone-alt me-2 fa-rotate-90" style={{ fontSize: '29px' }}></i>
 
@@ -201,7 +201,19 @@ function App() {
                                         <p style={{ fontSize: '20px' }} className="mb-2 d-flex ms-4">
                                             <i className="fas fa-envelope me-2 " style={{ fontSize: '29px' }}></i><p>gospelknight55@gmail.com</p>
                                         </p>
+                                    </div> */}
+                                    <div className="ms-lg-5 ms-0  mt-2 d-flex flex-column align-items-center align-items-md-start text-center text-md-start">
+                                        <div className="ms-lg-3 ms-0 d-flex align-items-center mb-2">
+                                            <i className="fas fa-phone-alt me-2 fa-rotate-90" style={{ fontSize: '29px' }}></i>
+                                            <span style={{ fontSize: '20px' }}>+977 9860811940</span>
+                                        </div>
+                                        <div className="ms-lg-3 ms-0 d-flex align-items-center">
+                                            <i className="fas fa-envelope me-2" style={{ fontSize: '29px' }}></i>
+                                            <span style={{ fontSize: '20px' }}>gospelknight55@gmail.com</span>
+                                        </div>
                                     </div>
+
+
                                 </div>
 
                             </div>
